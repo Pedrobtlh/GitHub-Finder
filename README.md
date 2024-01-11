@@ -1,34 +1,48 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# GitHub Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **GitHub Finder** é um projeto desenvolvido em **React** e **TypeScript**, utilizando a API do GitHub para buscar e exibir informações de usuários. Essa aplicação proporciona uma interface amigável para localizar perfis no GitHub e visualizar detalhes relevantes.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Pesquisa de Usuários:**
+   - Os usuários podem inserir o nome de usuário do GitHub na barra de pesquisa.
+   - A aplicação envia uma solicitação à API do GitHub para recuperar os dados do usuário.
 
-## Expanding the ESLint configuration
+2. **Exibição de Perfil:**
+   - Após a pesquisa, o perfil do usuário é exibido, mostrando informações como nome, avatar, biografia e estatísticas de repositórios.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Listagem de Repositórios:**
+   - A aplicação lista os repositórios do usuário, exibindo detalhes como nome, descrição, estrelas e forks.
 
-- Configure the top-level `parserOptions` property like this:
+4. **Interface Responsiva:**
+   - O GitHub Finder é projetado para ser responsivo, oferecendo uma experiência consistente em dispositivos desktop e móveis.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Tecnologias Utilizadas
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-=======
-# GitHub-Finder
->>>>>>> db5b067ed89fd9cb66dc806e09bc7b095c5a935b
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript:** Superset do JavaScript que adiciona tipagem estática ao código.
+- **GitHub API:** Utilizada para recuperar informações de usuários e repositórios.
+
+## Pré-requisitos
+
+Certifique-se de ter o **Node.js** e o **npm** instalados em sua máquina.
+
+## Como Executar o Projeto
+
+1. **Clone este repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/github-finder.git
+Navegue até o diretório do projeto:
+
+
+
+cd github-finder
+Instale as dependências:
+
+
+npm install
+Inicie a aplicação:
+
+
+npm start
+Abra o navegador e acesse http://localhost:3000 para visualizar o GitHub Finder.
